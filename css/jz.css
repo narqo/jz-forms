@@ -1,0 +1,120 @@
+form.jz * {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+form.jz dl {
+    position: relative;
+}
+
+.jz dt {
+    float: left;
+    width: 10em;
+}
+
+.jz dd {
+    display: inline;
+    display: inline-block;
+    position: relative;
+}
+
+.jz-hidden {
+    visibility: hidden;
+}
+
+.jz-invisible {
+    display: none;
+}
+
+.jz-focused {
+    z-index: 2;
+}
+
+.jz-placeholder {
+    position: absolute;
+    margin: 0.25em 0.4em;
+    color: #CCC;
+}
+
+/* combo */
+
+.jz-list {
+    position: absolute;
+    background: #FFF;
+}
+
+.jz-list iframe {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.jz-list ul {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #999;
+    -webkit-box-shadow: rgba(0,0,0,0.1) 0.2em 0.2em 0.2em;
+    -moz-box-shadow: rgba(0,0,0,0.1) 0.2em 0.2em 0.2em;
+}
+
+.jz-list li {
+    margin: 0;
+    padding: 0.1em 0.3em;
+    list-style-type: none;
+    cursor: default;
+    white-space: nowrap;
+}
+
+.jz-list li:hover {
+    background: #EFEFEF;
+}
+
+.jz-list li.jz-selected {
+    background: #CCC;
+}
+
+.jz-comboarrow {
+    width: 20px;
+    background-image: url(../i/jz.png);
+    background-position: -47px 0.4em;
+    background-repeat: no-repeat;
+    height: 100%;
+    //position: absolute;
+}
+
+.jz-comboarrow-pressed {
+    background-color: red;
+}
+
+/* date widget */
+
+.jz-day,
+.jz-month,
+.jz-year,
+.jz-hour,
+.jz-minute,
+.jz-second {
+    margin-right: 0.2em;
+}
+
+.jz-day,
+.jz-hour,
+.jz-minute,
+.jz-second {
+    width: 1.3em;
+}
+
+.jz-year {
+    width: 2.3em;
+}
+
+.jz-invalid label,
+.jz-invalid input {
+    color: #FF0000;
+}
+
+.jz-invalid-ok input {
+    color: #009000;
+}
