@@ -146,7 +146,7 @@ JZ.Builder = $.inherit({
                 return elem.parent();
 
             default:
-                return elem.attr('type') == 'hidden'? elem : elem.closest('.' CSS_CLASS_WIDGET + '-widget');
+                return elem.attr('type') == 'hidden'? elem : elem.closest('.' JZ.CSS_CLASS_WIDGET + '-widget');
         }
 
     },
